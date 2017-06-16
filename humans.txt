@@ -1,0 +1,26 @@
+/* WHO WE ARE */
+    We're HAND Creative Design, a full Creative team located in Mexico City.
+    We build fully handcrafted creative experiences for the future.
+
+    Feel free to contact us at: proyectos [at] handcd.com
+
+/* TEAM */
+    Design: Marimar Fornos
+    Contact:
+    Twitter:
+    From:
+
+    Developement: Humberto Alcocer
+    Contact: humbertowoody [at] gmail.com
+    Twitter: @humbertowoody
+    From: Mexico City, Mexico
+
+/* CLIENT */
+
+    Designed for and only used by: Educapital
+
+/* ---- */
+
+Made with love in June 2017.
+Santa Fe, Mexico City.
+<3

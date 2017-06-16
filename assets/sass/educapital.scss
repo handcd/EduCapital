@@ -1,0 +1,439 @@
+/*
+ * UNISEMINARS S.C.P.
+ *
+ * Hoja de estilos para EduCapital.
+ *
+ * (C) 2017 <3
+ */
+
+
+$fondo: #1E1E34;
+$azul: #0759CC;
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: Montserrat;
+}
+
+.imagen-fondo {
+    height: 600px;
+    background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Roboto;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+hr {
+    border-top: 3px solid $fondo;
+}
+
+#copyright-footer {
+    background-color: $fondo;
+    padding: 30px;
+}
+
+nav {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10px;
+    //padding-bottom: 20px;
+    color: $fondo;
+}
+
+.navbar-brand {
+  background: url('../img/logo.png') center / contain no-repeat;
+  width: 200px;
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  padding: 0px;
+}
+
+.navbar .divider-vertical {
+    height: 40px;
+    margin-top: 5px;
+    border-right: 1px solid #ffffff;
+    border-left: 1px solid $fondo;
+}
+
+.navbar-inverse .divider-vertical {
+    border-right-color: #222222;
+    border-left-color: #111111;
+}
+
+.panel-heading {
+    background: none;
+}
+
+.white-hr {
+    border-top: 3px solid white;
+}
+
+.carousel-caption {
+    background-color: rgba(47, 46, 80, 0.5);
+    padding: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+    right: auto;
+    left: 0;
+    max-width: 50%;
+
+    p {
+        font-size: x-large;
+    }
+}
+
+.fondo-oscuro {
+    background-color: $fondo;
+    color: white;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+
+    hr {
+        border-top: 3px solid white;
+    }
+}
+
+.mitad-pantalla {
+    width: 50%;
+}
+
+.boton-blanco {
+    position: relative;
+    margin: 10px 7px;
+    padding: 5px 5px;
+    color: #FFFFFF;
+    border: 1px #FFFFFF solid;
+    border-radius: 4px;
+    text-transform: uppercase;
+    outline: 0;
+    overflow:hidden;
+    background: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    cursor: pointer;
+    transition:         0.08s ease-in;
+    -o-transition:      0.08s ease-in;
+    -ms-transition:     0.08s ease-in;
+    -moz-transition:    0.08s ease-in;
+    -webkit-transition: 0.08s ease-in;
+
+    &:hover {
+        color: $fondo;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        background: white;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 100%;
+        z-index: -1;
+        -webkit-transition: top 0.09s ease-in;
+    }
+
+    &:hover:before {
+        top: 0;
+    }
+}
+
+#texto-fondos-federales {
+    padding-left: 30px;
+
+    .boton-blanco {
+        background-color: rgba(7, 89, 204, 0.9);
+        &:before {
+            background: #FFF;
+            border-style: solid;
+            border-width: 3px;
+            border-color: #333;
+            border-radius: 5px;
+        }
+    }
+}
+
+.hr-sin-borde {
+    margin: 0px 0px;
+}
+
+#footer-menus {
+    padding: 30px;
+
+    .panel {
+        border: 0px;
+
+    }
+
+    .panel-heading {
+        border-bottom-width: 2px;
+        border-bottom-color: $fondo;
+        background: none;
+    }
+}
+
+.imagen-socio {
+    max-height: 120px;
+    max-width: 200px;
+}
+
+#texto-fondos-perdidos {
+    text-transform: none;
+}
+
+#texto-capital-privado {
+    color: white;
+    padding-top: 60px;
+    
+    hr {
+        border-top: 3px solid white;
+    }
+}
+
+#imagen-fondos-federales {
+    .img {
+        margin-right: -15px; // Remove right gap
+        margin-left: -15px;  // Remove left gap
+        padding-bottom: 62.5%; // ratio is 16:10
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+#asociacion {
+    .boton-blanco {
+        background-color: rgba(7, 89, 204, 0.9);
+
+        &:before {
+            background: #FFF;
+            border-style: solid;
+            border-width: 3px;
+            border-color: #333;
+            border-radius: 5px;
+        }
+    }
+}
+
+#datos-barra {
+    .col-lg-6 {
+        height: 100%;
+    }
+
+    ul {
+        padding-top: 20%;
+        padding-bottom: 20%;
+        padding-right: 50%;
+        padding-left: 10px;
+    }
+    li {
+        background: rgba($fondo, 0.4);
+        border-radius: 5px;
+
+        a {
+            color: white;
+            &:hover {
+                background: rgba($fondo, 0.6);
+            }
+
+            &:active {
+                background: $fondo;
+            }
+        }
+    }
+
+    .nav-pills > .active > a, .nav-pills > .active > a:hover {
+        background: rgba($fondo, 0.9);
+    }
+
+    // .row{
+    //     overflow: hidden; 
+    // }
+
+    // [class*="col-"]{
+    //     margin-bottom: -99999px;
+    //     padding-bottom: 99999px;
+    // }
+}
+
+#texto-asociacion {
+    padding-right: 20%;
+}
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 79%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+}
+.iframe-container > *{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#myCarousel2 {
+    .carousel-caption {
+        //background-color: rgba(47, 46, 80, 0.5);
+        //padding: 30px;
+        margin: 0px;
+        text-align: left;
+        right: auto;
+        left: 0;
+        max-width: 50%;
+        height: 100%;
+        padding-top: 20%;   
+    }
+}
+
+#row-datos {
+    background: $fondo;
+}
+
+#row-contacto {
+    background: $fondo;
+}
+
+@media (max-width: 767px) {
+    .navbar-collapse .nav > .divider-vertical {
+        display: none;
+     }
+
+    .mitad-pantalla {
+        width: 100%;
+    }
+
+    .imagen-socio {
+        padding-bottom: 10px;
+    }
+
+    #texto-fondos-perdidos {
+        font-size: 24px;
+    }
+
+    #texto-fondos-federales {
+        padding-right: 50px;
+    }
+
+    #datos-barra {
+        ul {
+            padding: 15%;
+        }
+    }
+    
+    body {
+        padding-top: 50px;
+    }
+
+    .carousel-caption {
+        background-color: $fondo;
+        padding: 10px;
+        margin-bottom: 40px;
+        //margin-top: 30px;
+        //text-align: left;
+        right: auto;
+        left: auto;
+        max-width: 100%;
+        max-height: 100%;
+        width: 100%;
+        //height: 60%;
+
+        h1, h2, h3, h4 {
+            text-align: center;
+            font-size: 25px;
+            text-transform: none;
+        }
+
+        p {
+            text-align: center;
+            font-size: 16px;
+        }
+        img {
+            //position: absolute;
+            //top: 0;
+            //left: 0;
+            min-width: 100%;
+            min-height: 500px;
+        }
+    }
+    #myCarousel {
+        img {
+            min-width: 100%;
+            min-height: 300px;
+        }
+    }
+
+    #myCarousel2 {
+        .carousel-caption {
+            background-color: $fondo;
+            padding: 10px;
+            margin-bottom: 0px;
+            //text-align: left;
+            right: auto;
+            left: auto;
+            max-width: 100%;
+            max-height: 100%;
+            width: 100%;
+            height: 100%;
+
+            h1, h2, h3, h4 {
+                font-size: 25px;
+            }
+
+            p {
+                font-size: 16px;
+            }  
+        }
+
+        img {
+            min-width: 100%;
+            min-height: 500px;
+        }
+    }
+}
+
+@media (max-width: 1025px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
