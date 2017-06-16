@@ -313,6 +313,13 @@ nav {
 
   .navbar-nav > li > a {
     padding-top: 10px;
-    padding-bottom: 10px; } }
+    padding-bottom: 10px; }
+
+  /* since 3.1.0 */
+  .navbar-collapse.collapse.in {
+    display: block !important; }
+
+  .collapsing {
+    overflow: hidden !important; } }
 
 /*# sourceMappingURL=educapital.css.map */
