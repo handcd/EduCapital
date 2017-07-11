@@ -64,10 +64,11 @@ nav {
 .carousel-caption {
   background-color: rgba(47, 46, 80, 0.5);
   padding: 30px;
-  margin-bottom: 30px;
+  padding-bottom: 60px;
   text-align: left;
   right: auto;
   left: 0;
+  bottom: 0;
   max-width: 50%; }
   .carousel-caption p {
     font-size: x-large; }
@@ -217,6 +218,7 @@ nav {
   text-align: left;
   right: auto;
   left: 0;
+  top: 0;
   max-width: 50%;
   height: 100%;
   padding-top: 20%; }
