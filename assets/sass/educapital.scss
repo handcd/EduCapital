@@ -27,10 +27,11 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
-.vcenter {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
+#about {
+    padding: 80px;
+    h3 {
+        text-transform: none;
+    }
 }
 
 hr {
@@ -82,8 +83,7 @@ nav {
 .carousel-caption {
     background-color: rgba(47, 46, 80, 0.5);
     padding: 30px;
-    //margin-bottom: 30px;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
     text-align: left;
     right: auto;
     left: 0;
@@ -295,7 +295,7 @@ nav {
 
 #myCarousel2 {
     .carousel-caption {
-        //background-color: rgba(47, 46, 80, 0.5);
+        background-color: rgba(47, 46, 80, 0.8);
         //padding: 30px;
         margin: 0px;
         text-align: left;
