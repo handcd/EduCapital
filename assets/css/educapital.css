@@ -213,6 +213,22 @@ nav {
   height: 100%;
   width: 100%; }
 
+.service-box {
+  max-width: 400px;
+  margin: 50px auto 0; }
+
+@media (min-width: 992px) {
+  .service-box {
+    margin: 20px auto 0; } }
+.service-box p {
+  margin-bottom: 0; }
+
+.sr-icons {
+  background-color: #1E1E34;
+  color: white;
+  border-radius: 50%;
+  padding: 40px; }
+
 #myCarousel2 .carousel-caption {
   background-color: rgba(47, 46, 80, 0.8);
   margin: 0px;
@@ -222,7 +238,7 @@ nav {
   top: 0;
   max-width: 50%;
   height: 100%;
-  padding-top: 20%; }
+  padding-top: 15%; }
 
 #row-datos {
   background: #1E1E34; }
