@@ -366,6 +366,13 @@ nav {
     body {
         padding-top: 50px;
     }
+    
+    #about {
+        padding: 0px;
+        h3 {
+            text-transform: none;
+        }
+    }
 
     .carousel-caption {
         background-color: $fondo;
