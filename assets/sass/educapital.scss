@@ -6,19 +6,14 @@
  * (C) 2017 <3
  */
 
+// Colores
+$azul-oscuro: #1E1E34;
 
-$fondo: #1E1E34;
-$azul: #0759CC;
 
 html, body {
     max-width: 100%;
     overflow-x: hidden;
     font-family: Montserrat;
-}
-
-.imagen-fondo {
-    height: 600px;
-    background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,20 +22,8 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
-#about {
-    padding: 80px;
-    h3 {
-        text-transform: none;
-    }
-}
-
 hr {
-    border-top: 3px solid $fondo;
-}
-
-#copyright-footer {
-    background-color: $fondo;
-    padding: 30px;
+    border-top: 3px solid $azul-oscuro;
 }
 
 nav {
@@ -48,7 +31,79 @@ nav {
     font-weight: bold;
     font-size: 10px;
     //padding-bottom: 20px;
-    color: $fondo;
+    color: $azul-oscuro;
+}
+
+#about {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    min-height: 100vh;
+    
+    img {
+        max-width: 30vw;
+    }
+
+    h3 {
+        text-transform: none;
+    }
+}
+
+#texto-educacion40 {
+    color: white;
+    padding-top: 10vh;
+    background: rgba(0,0,0,0.5); 
+    min-width: 50vw; 
+    min-height: 100vh;
+    font-size: 1.5em;
+    text-align: center;
+    h1 {
+        text-align: center;
+        background: $azul-oscuro;
+        padding: 5vh;
+        border-radius: 5px;
+        font-size: 3em;
+    }
+
+    
+    
+    hr {
+        border-top: 3px solid #ffffff;
+    }
+}
+
+@media (max-width: 767px) {
+    #texto-educacion40 {
+    color: white;
+    padding-top: 10vh;
+    background: rgba(0,0,0,0.5); 
+    min-width: 50vw; 
+    min-height: 100vh;
+    font-size: 1.1em;
+    text-align: center;
+    h1 {
+        text-align: center;
+        background: $azul-oscuro;
+        padding: 5vh;
+        border-radius: 5px;
+        font-size: 1.6em;
+    }
+
+    
+    
+    hr {
+        border-top: 3px solid #ffffff;
+    }
+}
+}
+
+#copyright-footer {
+    background-color: $azul-oscuro;
+    padding: 30px;
+}
+
+.imagen-fondo {
+    height: 100vh;
+    background-size: cover;
 }
 
 .navbar-brand {
@@ -64,12 +119,7 @@ nav {
     height: 40px;
     margin-top: 5px;
     border-right: 1px solid #ffffff;
-    border-left: 1px solid $fondo;
-}
-
-.navbar-inverse .divider-vertical {
-    border-right-color: #222222;
-    border-left-color: #111111;
+    border-left: 2px solid $azul-oscuro;
 }
 
 .panel-heading {
@@ -96,7 +146,7 @@ nav {
 }
 
 .fondo-oscuro {
-    background-color: $fondo;
+    background-color: $azul-oscuro;
     color: white;
     height: 100%;
     width: 100%;
@@ -133,7 +183,7 @@ nav {
     -webkit-transition: 0.08s ease-in;
 
     &:hover {
-        color: $fondo;
+        color: $azul-oscuro;
     }
 
     &:before {
@@ -153,20 +203,6 @@ nav {
     }
 }
 
-#texto-fondos-federales {
-    padding-left: 30px;
-
-    .boton-blanco {
-        background-color: rgba(7, 89, 204, 0.9);
-        &:before {
-            background: #FFF;
-            border-style: solid;
-            border-width: 3px;
-            border-color: #333;
-            border-radius: 5px;
-        }
-    }
-}
 
 .hr-sin-borde {
     margin: 0px 0px;
@@ -182,7 +218,7 @@ nav {
 
     .panel-heading {
         border-bottom-width: 2px;
-        border-bottom-color: $fondo;
+        border-bottom-color: $azul-oscuro;
         background: none;
     }
 }
@@ -196,14 +232,7 @@ nav {
     text-transform: none;
 }
 
-#texto-capital-privado {
-    color: white;
-    padding-top: 60px;
-    
-    hr {
-        border-top: 3px solid white;
-    }
-}
+
 
 #imagen-fondos-federales {
     .img {
@@ -216,19 +245,6 @@ nav {
     }
 }
 
-#asociacion {
-    .boton-blanco {
-        background-color: rgba(7, 89, 204, 0.9);
-
-        &:before {
-            background: #FFF;
-            border-style: solid;
-            border-width: 3px;
-            border-color: #333;
-            border-radius: 5px;
-        }
-    }
-}
 
 #datos-barra {
     .col-lg-6 {
@@ -242,23 +258,23 @@ nav {
         padding-left: 10px;
     }
     li {
-        background: rgba($fondo, 0.4);
+        background: rgba($azul-oscuro, 0.4);
         border-radius: 5px;
 
         a {
             color: white;
             &:hover {
-                background: rgba($fondo, 0.6);
+                background: rgba($azul-oscuro, 0.6);
             }
 
             &:active {
-                background: $fondo;
+                background: $azul-oscuro;
             }
         }
     }
 
     .nav-pills > .active > a, .nav-pills > .active > a:hover {
-        background: rgba($fondo, 0.9);
+        background: rgba($azul-oscuro, 0.9);
     }
 
     // .row{
@@ -307,7 +323,7 @@ nav {
 }
 
 .sr-icons {
-    background-color: $fondo;
+    background-color: $azul-oscuro;
     color: white;
     border-radius: 50%;
     padding: 40px;
@@ -329,11 +345,11 @@ nav {
 }
 
 #row-datos {
-    background: $fondo;
+    background: $azul-oscuro;
 }
 
 #row-contacto {
-    background: $fondo;
+    background: $azul-oscuro;
 }
 
 @media (max-width: 767px) {
@@ -369,13 +385,10 @@ nav {
     
     #about {
         padding: 0px;
-        h3 {
-            text-transform: none;
-        }
     }
 
     .carousel-caption {
-        background-color: $fondo;
+        background-color: $azul-oscuro;
         padding: 10px;
         margin-bottom: 40px;
         //margin-top: 30px;
@@ -407,14 +420,15 @@ nav {
     }
     #myCarousel {
         img {
-            min-width: 100%;
-            min-height: 300px;
+            margin-top: 10vh;
+            min-width: 100vw;
+            min-height: 100vh;
         }
     }
 
     #myCarousel2 {
         .carousel-caption {
-            background-color: $fondo;
+            background-color: $azul-oscuro;
             padding: 10px;
             margin-bottom: 0px;
             //text-align: left;

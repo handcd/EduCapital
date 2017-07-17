@@ -10,32 +10,70 @@ html, body {
   overflow-x: hidden;
   font-family: Montserrat; }
 
-.imagen-fondo {
-  height: 600px;
-  background-size: cover; }
-
 h1, h2, h3, h4, h5, h6 {
   font-family: Roboto;
   font-weight: bold;
   text-transform: uppercase; }
 
-#about {
-  padding: 80px; }
-  #about h3 {
-    text-transform: none; }
-
 hr {
   border-top: 3px solid #1E1E34; }
-
-#copyright-footer {
-  background-color: #1E1E34;
-  padding: 30px; }
 
 nav {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 10px;
   color: #1E1E34; }
+
+#about {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  min-height: 100vh; }
+  #about img {
+    max-width: 30vw; }
+  #about h3 {
+    text-transform: none; }
+
+#texto-educacion40 {
+  color: white;
+  padding-top: 10vh;
+  background: rgba(0, 0, 0, 0.5);
+  min-width: 50vw;
+  min-height: 100vh;
+  font-size: 1.5em;
+  text-align: center; }
+  #texto-educacion40 h1 {
+    text-align: center;
+    background: #1E1E34;
+    padding: 5vh;
+    border-radius: 5px;
+    font-size: 3em; }
+  #texto-educacion40 hr {
+    border-top: 3px solid #ffffff; }
+
+@media (max-width: 767px) {
+  #texto-educacion40 {
+    color: white;
+    padding-top: 10vh;
+    background: rgba(0, 0, 0, 0.5);
+    min-width: 50vw;
+    min-height: 100vh;
+    font-size: 1.1em;
+    text-align: center; }
+    #texto-educacion40 h1 {
+      text-align: center;
+      background: #1E1E34;
+      padding: 5vh;
+      border-radius: 5px;
+      font-size: 1.6em; }
+    #texto-educacion40 hr {
+      border-top: 3px solid #ffffff; } }
+#copyright-footer {
+  background-color: #1E1E34;
+  padding: 30px; }
+
+.imagen-fondo {
+  height: 100vh;
+  background-size: cover; }
 
 .navbar-brand {
   background: url("../img/logo.png") center/contain no-repeat;
@@ -49,11 +87,7 @@ nav {
   height: 40px;
   margin-top: 5px;
   border-right: 1px solid #ffffff;
-  border-left: 1px solid #1E1E34; }
-
-.navbar-inverse .divider-vertical {
-  border-right-color: #222222;
-  border-left-color: #111111; }
+  border-left: 2px solid #1E1E34; }
 
 .panel-heading {
   background: none; }
@@ -120,17 +154,6 @@ nav {
   .boton-blanco:hover:before {
     top: 0; }
 
-#texto-fondos-federales {
-  padding-left: 30px; }
-  #texto-fondos-federales .boton-blanco {
-    background-color: rgba(7, 89, 204, 0.9); }
-    #texto-fondos-federales .boton-blanco:before {
-      background: #FFF;
-      border-style: solid;
-      border-width: 3px;
-      border-color: #333;
-      border-radius: 5px; }
-
 .hr-sin-borde {
   margin: 0px 0px; }
 
@@ -150,12 +173,6 @@ nav {
 #texto-fondos-perdidos {
   text-transform: none; }
 
-#texto-capital-privado {
-  color: white;
-  padding-top: 60px; }
-  #texto-capital-privado hr {
-    border-top: 3px solid white; }
-
 #imagen-fondos-federales .img {
   margin-right: -15px;
   margin-left: -15px;
@@ -163,15 +180,6 @@ nav {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover; }
-
-#asociacion .boton-blanco {
-  background-color: rgba(7, 89, 204, 0.9); }
-  #asociacion .boton-blanco:before {
-    background: #FFF;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #333;
-    border-radius: 5px; }
 
 #datos-barra .col-lg-6 {
   height: 100%; }
@@ -270,8 +278,6 @@ nav {
 
   #about {
     padding: 0px; }
-    #about h3 {
-      text-transform: none; }
 
   .carousel-caption {
     background-color: #1E1E34;
@@ -294,8 +300,9 @@ nav {
       min-height: 500px; }
 
   #myCarousel img {
-    min-width: 100%;
-    min-height: 300px; }
+    margin-top: 10vh;
+    min-width: 100vw;
+    min-height: 100vh; }
 
   #myCarousel2 .carousel-caption {
     background-color: #1E1E34;
