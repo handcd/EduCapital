@@ -10,10 +10,12 @@
 $azul-oscuro: #1E1E34;
 
 
+// Main HTML Tags
 html, body {
     max-width: 100%;
     overflow-x: hidden;
     font-family: Montserrat;
+    padding-top: 3vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,6 +36,7 @@ nav {
     color: $azul-oscuro;
 }
 
+// Section Specific
 #about {
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -73,27 +76,11 @@ nav {
 
 @media (max-width: 767px) {
     #texto-educacion40 {
-    color: white;
-    padding-top: 10vh;
-    background: rgba(0,0,0,0.5); 
-    min-width: 50vw; 
-    min-height: 100vh;
-    font-size: 1.1em;
-    text-align: center;
-    h1 {
-        text-align: center;
-        background: $azul-oscuro;
-        padding: 5vh;
-        border-radius: 5px;
-        font-size: 1.6em;
+        font-size: 1.1em;
+        h1 {
+            font-size: 1.6em;
+        }
     }
-
-    
-    
-    hr {
-        border-top: 3px solid #ffffff;
-    }
-}
 }
 
 #copyright-footer {
@@ -228,12 +215,6 @@ nav {
     max-width: 200px;
 }
 
-#texto-fondos-perdidos {
-    text-transform: none;
-}
-
-
-
 #imagen-fondos-federales {
     .img {
         margin-right: -15px; // Remove right gap
@@ -285,10 +266,6 @@ nav {
     //     margin-bottom: -99999px;
     //     padding-bottom: 99999px;
     // }
-}
-
-#texto-asociacion {
-    padding-right: 20%;
 }
 
 .iframe-container{
@@ -365,14 +342,6 @@ nav {
         padding-bottom: 10px;
     }
 
-    #texto-fondos-perdidos {
-        font-size: 24px;
-    }
-
-    #texto-fondos-federales {
-        padding-right: 50px;
-    }
-
     #datos-barra {
         ul {
             padding: 15%;
@@ -380,11 +349,15 @@ nav {
     }
     
     body {
-        padding-top: 50px;
+        padding-top: 0px;
     }
     
     #about {
         padding: 0px;
+
+        img {
+            max-width: 80vw;
+        }
     }
 
     .carousel-caption {
@@ -414,15 +387,16 @@ nav {
             //position: absolute;
             //top: 0;
             //left: 0;
-            min-width: 100%;
-            min-height: 500px;
+            min-width: 100vw;
+            min-height: 100vh;
         }
     }
     #myCarousel {
         img {
-            margin-top: 10vh;
-            min-width: 100vw;
+            //margin-top: 10vh;
+            //min-width: 100vw;
             min-height: 100vh;
+            object-fit: cover;
         }
     }
 
