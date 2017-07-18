@@ -31,7 +31,7 @@ hr {
 nav {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 10px;
+    font-size: 0.7em;
     //padding-bottom: 20px;
     color: $azul-oscuro;
 }
@@ -41,7 +41,7 @@ nav {
     padding-top: 10vh;
     padding-bottom: 10vh;
     min-height: 100vh;
-    
+    font-size: 1.5em;
     img {
         max-width: 30vw;
     }
@@ -94,19 +94,35 @@ nav {
 }
 
 .navbar-brand {
-  background: url('../img/logo.png') center / contain no-repeat;
-  width: 200px;
-  transform: translateX(-50%);
-  left: 50%;
-  position: absolute;
   padding: 0px;
 }
 
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+  padding-left: 10vw;
+}
+
+.navbar-brand {
+  height: 80px;
+}
+
+.nav >li >a {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.navbar-toggle {
+  padding: 10px;
+  margin: 25px 15px 25px 0;
+}
+
 .navbar .divider-vertical {
-    height: 40px;
-    margin-top: 5px;
+    height: 7vh;
+    margin-top: 1vh;
     border-right: 1px solid #ffffff;
-    border-left: 2px solid $azul-oscuro;
+    border-left: 1px solid $azul-oscuro;
 }
 
 .panel-heading {
@@ -253,19 +269,6 @@ nav {
             }
         }
     }
-
-    .nav-pills > .active > a, .nav-pills > .active > a:hover {
-        background: rgba($azul-oscuro, 0.9);
-    }
-
-    // .row{
-    //     overflow: hidden; 
-    // }
-
-    // [class*="col-"]{
-    //     margin-bottom: -99999px;
-    //     padding-bottom: 99999px;
-    // }
 }
 
 .iframe-container{
@@ -354,7 +357,7 @@ nav {
     
     #about {
         padding: 0px;
-
+        font-size: 1em;
         img {
             max-width: 80vw;
         }
@@ -463,4 +466,3 @@ nav {
         overflow: hidden!important;
     }
 }
-

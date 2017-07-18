@@ -22,13 +22,14 @@ hr {
 nav {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 0.7em;
   color: #1E1E34; }
 
 #about {
   padding-top: 10vh;
   padding-bottom: 10vh;
-  min-height: 100vh; }
+  min-height: 100vh;
+  font-size: 1.5em; }
   #about img {
     max-width: 30vw; }
   #about h3 {
@@ -65,18 +66,30 @@ nav {
   background-size: cover; }
 
 .navbar-brand {
-  background: url("../img/logo.png") center/contain no-repeat;
-  width: 200px;
-  transform: translateX(-50%);
-  left: 50%;
-  position: absolute;
   padding: 0px; }
 
+.navbar-brand > img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+  padding-left: 10vw; }
+
+.navbar-brand {
+  height: 80px; }
+
+.nav > li > a {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.navbar-toggle {
+  padding: 10px;
+  margin: 25px 15px 25px 0; }
+
 .navbar .divider-vertical {
-  height: 40px;
-  margin-top: 5px;
+  height: 7vh;
+  margin-top: 1vh;
   border-right: 1px solid #ffffff;
-  border-left: 2px solid #1E1E34; }
+  border-left: 1px solid #1E1E34; }
 
 .panel-heading {
   background: none; }
@@ -183,8 +196,6 @@ nav {
       background: rgba(30, 30, 52, 0.6); }
     #datos-barra li a:active {
       background: #1E1E34; }
-#datos-barra .nav-pills > .active > a, #datos-barra .nav-pills > .active > a:hover {
-  background: rgba(30, 30, 52, 0.9); }
 
 .iframe-container {
   position: relative;
@@ -254,7 +265,8 @@ nav {
     padding-top: 0px; }
 
   #about {
-    padding: 0px; }
+    padding: 0px;
+    font-size: 1em; }
     #about img {
       max-width: 80vw; }
 
