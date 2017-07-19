@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase; }
 
 hr {
-  border-top: 3px solid #1E1E34; }
+  border-top: 7px solid #1E1E34; }
 
 nav {
   text-transform: uppercase;
@@ -205,6 +205,10 @@ nav {
 .hr-sin-borde {
   margin: 0px 0px; }
 
+.hr-sin-borde-rojo {
+  margin: 0px 0px;
+  border-top: 6px solid #FF0000; }
+
 #tituloProyectosApoyamos {
   padding: 7vh 0; }
   #tituloProyectosApoyamos h1 {
@@ -302,6 +306,19 @@ nav {
   min-width: 50%;
   height: 100%; }
 
+#myCarousel3 .carousel-caption {
+  background-color: white;
+  padding: 30vh 5vw;
+  margin: 0px;
+  text-align: left;
+  right: 0;
+  left: 50%;
+  top: 0;
+  max-width: 50%;
+  min-width: 50%;
+  height: 100%;
+  color: #333; }
+
 #texto-final-educacion40 {
   font-size: 2.3em;
   padding: 15vh 0;
@@ -314,6 +331,22 @@ nav {
   background: #1E1E34; }
 
 @media (max-width: 767px) {
+  #myCarousel3 .carousel-caption {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10vh 5vw;
+    margin: 0px;
+    text-align: center;
+    right: 0;
+    left: 0;
+    top: 0;
+    max-width: 100%;
+    min-width: 100%;
+    height: 100%;
+    color: #333; }
+
+  .service-box {
+    max-width: 90%; }
+
   .navbar-collapse .nav > .divider-vertical {
     display: none; }
 
