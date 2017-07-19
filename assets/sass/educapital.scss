@@ -134,6 +134,10 @@ nav {
     background-size: cover;
 }
 
+#navbar-principal {
+    padding-right: 5vw;
+}
+
 .navbar-brand {
   padding: 0px;
 }
@@ -358,16 +362,22 @@ nav {
 #myCarousel2 {
     .carousel-caption {
         background-color: rgba(47, 46, 80, 0.8);
-        //padding: 30px;
+        padding: 10vh 5vw;
         margin: 0px;
         text-align: left;
         right: auto;
         left: 0;
         top: 0;
         max-width: 50%;
+        min-width: 50%;
         height: 100%;
-        padding-top: 15%;   
     }
+}
+
+#texto-final-educacion40 {
+    font-size: 2.3em;
+    padding: 15vh 0;
+    color: $azul-intermedio;
 }
 
 #row-datos {
