@@ -47,12 +47,18 @@ nav {
   color: #1E1E34; }
 
 #about {
-  padding-top: 10vh;
+  padding-top: 0;
   padding-bottom: 10vh;
   min-height: 100vh;
-  font-size: 1.5em; }
+  font-size: 1.3em; }
   #about img {
     max-width: 30vw; }
+  #about h1 {
+    margin-top: 0;
+    color: white;
+    font-size: 2.5em;
+    background: #1E1E34;
+    padding: 7vh; }
   #about h3 {
     text-transform: none; }
 
@@ -122,11 +128,12 @@ nav {
   background-color: rgba(47, 46, 80, 0.5);
   padding: 30px;
   padding-bottom: 100px;
-  text-align: left;
+  text-align: center;
   right: auto;
   left: 0;
   bottom: 0;
-  max-width: 50%; }
+  min-width: 100%;
+  font-size: 1.4em; }
   .carousel-caption p {
     font-size: x-large; }
 
@@ -300,8 +307,7 @@ nav {
     width: 100%; }
     .carousel-caption h1, .carousel-caption h2, .carousel-caption h3, .carousel-caption h4 {
       text-align: center;
-      font-size: 25px;
-      text-transform: none; }
+      font-size: 25px; }
     .carousel-caption p {
       text-align: center;
       font-size: 16px; }
