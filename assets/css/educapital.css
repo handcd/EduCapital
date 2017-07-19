@@ -205,6 +205,13 @@ nav {
 .hr-sin-borde {
   margin: 0px 0px; }
 
+#tituloProyectosApoyamos {
+  padding: 7vh 0; }
+  #tituloProyectosApoyamos h1 {
+    text-transform: none;
+    text-align: center;
+    font-size: 3.5em; }
+
 #footer-menus {
   padding: 30px; }
   #footer-menus .panel {
