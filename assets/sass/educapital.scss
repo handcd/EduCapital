@@ -75,27 +75,44 @@ nav {
     }
 }
 
+#imagen-fondo-40 {
+    position: relative;
+}
+
+#tituloEducacion40 {
+    //padding: 0px 20vw;
+    text-align: center;
+    font-size: 1.3em;
+    z-index: 10;
+    position: absolute;
+    
+    h1 {
+        text-align: center;
+        margin-top: 0;
+        color: white;
+        font-size: 2.5em;
+        background: $azul-oscuro;
+        padding: 7vh;
+    }
+
+}
+
+#eduDigitaltitulo {
+    padding-top: 15vh;
+    padding-bottom: 7vh;
+    font-size: 2.3em;
+}
+
 #texto-educacion40 {
+    position: absolute;
+    z-index: 5;
     color: white;
-    padding-top: 10vh;
-    background: rgba(0,0,0,0.5); 
+    padding-top: 30vh;
+    background: rgba($azul-oscuro, 0.8); 
     min-width: 50vw; 
     min-height: 100vh;
     font-size: 1.5em;
     text-align: center;
-    h1 {
-        text-align: center;
-        background: $azul-oscuro;
-        padding: 5vh;
-        border-radius: 5px;
-        font-size: 3.1em;
-    }
-
-    
-    
-    hr {
-        border-top: 3px solid #ffffff;
-    }
 }
 
 @media (max-width: 767px) {
@@ -306,9 +323,21 @@ nav {
     width: 100%;
 }
 
+#row-iconos-digital {
+    padding-bottom: 10vh;
+}
+
 .service-box {
-  max-width: 400px;
+  max-width: 33vw;
   margin: 50px auto 0;
+  h2 {
+    text-transform: none;
+  }
+
+  p {
+    padding: 0px 3vw;
+    font-size: 1.4em;
+  }
 }
 @media (min-width: 992px) {
   .service-box {
@@ -322,7 +351,7 @@ nav {
 .sr-icons {
     background-color: $azul-oscuro;
     color: white;
-    border-radius: 50%;
+    border-radius: 55%;
     padding: 40px;
 }
 
