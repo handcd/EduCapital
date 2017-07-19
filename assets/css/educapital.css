@@ -5,11 +5,32 @@
  *
  * (C) 2017 <3
  */
+.material-icons.md-18 {
+  font-size: 18px; }
+
+.material-icons.md-24 {
+  font-size: 24px; }
+
+.material-icons.md-36 {
+  font-size: 36px; }
+
+.material-icons.md-48 {
+  font-size: 48px; }
+
+.material-icons.md-72 {
+  font-size: 72px; }
+
+.row.match-my-cols {
+  overflow: hidden; }
+
+.row.match-my-cols [class*="col-"] {
+  margin-bottom: -99999px;
+  padding-bottom: 99999px; }
+
 html, body {
   max-width: 100%;
   overflow-x: hidden;
-  font-family: Montserrat;
-  padding-top: 3vh; }
+  font-family: Montserrat; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Roboto;
@@ -87,7 +108,7 @@ nav {
 
 .navbar .divider-vertical {
   height: 7vh;
-  margin-top: 1vh;
+  margin-top: 2vh;
   border-right: 1px solid #ffffff;
   border-left: 1px solid #1E1E34; }
 
@@ -168,34 +189,32 @@ nav {
     border-bottom-color: #1E1E34;
     background: none; }
 
-.imagen-socio {
-  max-height: 120px;
-  max-width: 200px; }
-
-#imagen-fondos-federales .img {
-  margin-right: -15px;
-  margin-left: -15px;
-  padding-bottom: 62.5%;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-#datos-barra .col-lg-6 {
-  height: 100%; }
-#datos-barra ul {
-  padding-top: 20%;
-  padding-bottom: 20%;
-  padding-right: 50%;
-  padding-left: 10px; }
-#datos-barra li {
-  background: rgba(30, 30, 52, 0.4);
-  border-radius: 5px; }
-  #datos-barra li a {
+.tarjeta-azul {
+  padding: 10px;
+  color: white;
+  background-color: #1E1E34; }
+  .tarjeta-azul .fa {
     color: white; }
-    #datos-barra li a:hover {
-      background: rgba(30, 30, 52, 0.6); }
-    #datos-barra li a:active {
-      background: #1E1E34; }
+  .tarjeta-azul p {
+    font-size: 1.3em; }
+
+.tarjeta-azul-claro {
+  padding: 10px;
+  color: white;
+  background-color: #0000ff; }
+  .tarjeta-azul-claro .fa {
+    color: white; }
+  .tarjeta-azul-claro p {
+    font-size: 1.3em; }
+
+.tarjeta-azul-intermedio {
+  padding: 10px;
+  color: white;
+  background-color: #3d3d9b; }
+  .tarjeta-azul-intermedio .fa {
+    color: white; }
+  .tarjeta-azul-intermedio p {
+    font-size: 1.3em; }
 
 .iframe-container {
   position: relative;

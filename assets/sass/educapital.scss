@@ -8,14 +8,30 @@
 
 // Colores
 $azul-oscuro: #1E1E34;
+$azul-claro: #0000ff;
+$azul-intermedio: #3d3d9b;
 
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-72 { font-size: 72px; }
+
+.row.match-my-cols {
+    overflow: hidden; 
+}
+
+.row.match-my-cols [class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
 
 // Main HTML Tags
 html, body {
     max-width: 100%;
     overflow-x: hidden;
     font-family: Montserrat;
-    padding-top: 3vh;
+    //padding-top: 3vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -120,7 +136,7 @@ nav {
 
 .navbar .divider-vertical {
     height: 7vh;
-    margin-top: 1vh;
+    margin-top: 2vh;
     border-right: 1px solid #ffffff;
     border-left: 1px solid $azul-oscuro;
 }
@@ -226,48 +242,39 @@ nav {
     }
 }
 
-.imagen-socio {
-    max-height: 120px;
-    max-width: 200px;
-}
-
-#imagen-fondos-federales {
-    .img {
-        margin-right: -15px; // Remove right gap
-        margin-left: -15px;  // Remove left gap
-        padding-bottom: 62.5%; // ratio is 16:10
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-        background-size: cover;
+.tarjeta-azul {
+    padding: 10px;
+    color: white;
+    background-color: $azul-oscuro;
+    .fa {
+        color: white;
+    }
+    p {
+        font-size: 1.3em;
     }
 }
 
-
-#datos-barra {
-    .col-lg-6 {
-        height: 100%;
+.tarjeta-azul-claro {
+    padding: 10px;
+    color: white;
+    background-color: $azul-claro;
+    .fa {
+        color: white;
     }
-
-    ul {
-        padding-top: 20%;
-        padding-bottom: 20%;
-        padding-right: 50%;
-        padding-left: 10px;
+    p {
+        font-size: 1.3em;
     }
-    li {
-        background: rgba($azul-oscuro, 0.4);
-        border-radius: 5px;
+}
 
-        a {
-            color: white;
-            &:hover {
-                background: rgba($azul-oscuro, 0.6);
-            }
-
-            &:active {
-                background: $azul-oscuro;
-            }
-        }
+.tarjeta-azul-intermedio {
+    padding: 10px;
+    color: white;
+    background-color: $azul-intermedio;
+    .fa {
+        color: white;
+    }
+    p {
+        font-size: 1.3em;
     }
 }
 
