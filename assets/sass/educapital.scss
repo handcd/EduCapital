@@ -6,19 +6,32 @@
  * (C) 2017 <3
  */
 
+// Colores
+$azul-oscuro: #1E1E34;
+$azul-claro: #0000ff;
+$azul-intermedio: #3d3d9b;
 
-$fondo: #1E1E34;
-$azul: #0759CC;
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-72 { font-size: 72px; }
 
+.row.match-my-cols {
+    overflow: hidden; 
+}
+
+.row.match-my-cols [class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+
+// Main HTML Tags
 html, body {
     max-width: 100%;
     overflow-x: hidden;
     font-family: Montserrat;
-}
-
-.imagen-fondo {
-    height: 600px;
-    background-size: cover;
+    //padding-top: 3vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,49 +40,134 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
-#about {
-    padding: 80px;
-    h3 {
-        text-transform: none;
-    }
-}
-
 hr {
-    border-top: 3px solid $fondo;
-}
-
-#copyright-footer {
-    background-color: $fondo;
-    padding: 30px;
+    border-top: 7px solid $azul-oscuro;
 }
 
 nav {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 10px;
+    font-size: 0.7em;
     //padding-bottom: 20px;
-    color: $fondo;
+    color: $azul-oscuro;
+}
+
+// Section Specific
+#about {
+    padding-top: 0;
+    padding-bottom: 10vh;
+    min-height: 100vh;
+    font-size: 1.3em;
+    img {
+        max-width: 30vw;
+    }
+
+    h1 {
+        margin-top: 0;
+        color: white;
+        font-size: 2.5em;
+        background: $azul-oscuro;
+        padding: 7vh;
+    }
+
+    h3 {
+        text-transform: none;
+    }
+}
+
+#imagen-fondo-40 {
+    position: relative;
+}
+
+#tituloEducacion40 {
+    //padding: 0px 20vw;
+    text-align: center;
+    font-size: 1.3em;
+    z-index: 10;
+    position: absolute;
+    
+    h1 {
+        text-align: center;
+        margin-top: 0;
+        color: white;
+        font-size: 2.5em;
+        background: $azul-oscuro;
+        padding: 7vh;
+    }
+
+}
+
+#eduDigitaltitulo {
+    padding-top: 15vh;
+    padding-bottom: 7vh;
+    font-size: 2.3em;
+}
+
+#texto-educacion40 {
+    position: absolute;
+    z-index: 5;
+    color: white;
+    padding-top: 30vh;
+    background: rgba($azul-oscuro, 0.8); 
+    min-width: 50vw; 
+    min-height: 100vh;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    #texto-educacion40 {
+        font-size: 1.1em;
+        h1 {
+            font-size: 1.6em;
+        }
+    }
+}
+
+#copyright-footer {
+    background-color: $azul-oscuro;
+    padding: 30px;
+}
+
+.imagen-fondo {
+    height: 100vh;
+    background-size: cover;
+}
+
+#navbar-principal {
+    padding-right: 5vw;
 }
 
 .navbar-brand {
-  background: url('../img/logo.png') center / contain no-repeat;
-  width: 200px;
-  transform: translateX(-50%);
-  left: 50%;
-  position: absolute;
   padding: 0px;
 }
 
-.navbar .divider-vertical {
-    height: 40px;
-    margin-top: 5px;
-    border-right: 1px solid #ffffff;
-    border-left: 1px solid $fondo;
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+  padding-left: 10vw;
 }
 
-.navbar-inverse .divider-vertical {
-    border-right-color: #222222;
-    border-left-color: #111111;
+.navbar-brand {
+  height: 80px;
+}
+
+.nav >li >a {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.navbar-toggle {
+  padding: 10px;
+  margin: 25px 15px 25px 0;
+}
+
+.navbar .divider-vertical {
+    height: 7vh;
+    margin-top: 2vh;
+    border-right: 1px solid #ffffff;
+    border-left: 1px solid $azul-oscuro;
 }
 
 .panel-heading {
@@ -84,11 +182,13 @@ nav {
     background-color: rgba(47, 46, 80, 0.5);
     padding: 30px;
     padding-bottom: 100px;
-    text-align: left;
+    text-align: center;
     right: auto;
     left: 0;
     bottom: 0;
-    max-width: 50%;
+    min-width: 100%;
+
+    font-size: 1.4em;
 
     p {
         font-size: x-large;
@@ -96,7 +196,7 @@ nav {
 }
 
 .fondo-oscuro {
-    background-color: $fondo;
+    background-color: $azul-oscuro;
     color: white;
     height: 100%;
     width: 100%;
@@ -133,7 +233,7 @@ nav {
     -webkit-transition: 0.08s ease-in;
 
     &:hover {
-        color: $fondo;
+        color: $azul-oscuro;
     }
 
     &:before {
@@ -153,23 +253,23 @@ nav {
     }
 }
 
-#texto-fondos-federales {
-    padding-left: 30px;
-
-    .boton-blanco {
-        background-color: rgba(7, 89, 204, 0.9);
-        &:before {
-            background: #FFF;
-            border-style: solid;
-            border-width: 3px;
-            border-color: #333;
-            border-radius: 5px;
-        }
-    }
-}
 
 .hr-sin-borde {
     margin: 0px 0px;
+}
+
+.hr-sin-borde-rojo {
+    margin: 0px 0px;
+    border-top: 6px solid #FF0000;
+}
+
+#tituloProyectosApoyamos {
+    padding: 7vh 0;
+    h1 {
+        text-transform: none;
+        text-align: center;
+        font-size: 3.5em;
+    }
 }
 
 #footer-menus {
@@ -182,97 +282,45 @@ nav {
 
     .panel-heading {
         border-bottom-width: 2px;
-        border-bottom-color: $fondo;
+        border-bottom-color: $azul-oscuro;
         background: none;
     }
 }
 
-.imagen-socio {
-    max-height: 120px;
-    max-width: 200px;
-}
-
-#texto-fondos-perdidos {
-    text-transform: none;
-}
-
-#texto-capital-privado {
+.tarjeta-azul {
+    padding: 10px;
     color: white;
-    padding-top: 60px;
-    
-    hr {
-        border-top: 3px solid white;
+    background-color: $azul-oscuro;
+    .fa {
+        color: white;
+    }
+    p {
+        font-size: 1.3em;
     }
 }
 
-#imagen-fondos-federales {
-    .img {
-        margin-right: -15px; // Remove right gap
-        margin-left: -15px;  // Remove left gap
-        padding-bottom: 62.5%; // ratio is 16:10
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-        background-size: cover;
+.tarjeta-azul-claro {
+    padding: 10px;
+    color: white;
+    background-color: $azul-claro;
+    .fa {
+        color: white;
+    }
+    p {
+        font-size: 1.3em;
     }
 }
 
-#asociacion {
-    .boton-blanco {
-        background-color: rgba(7, 89, 204, 0.9);
-
-        &:before {
-            background: #FFF;
-            border-style: solid;
-            border-width: 3px;
-            border-color: #333;
-            border-radius: 5px;
-        }
+.tarjeta-azul-intermedio {
+    padding: 10px;
+    color: white;
+    background-color: $azul-intermedio;
+    .fa {
+        color: white;
     }
-}
-
-#datos-barra {
-    .col-lg-6 {
-        height: 100%;
+    p {
+        font-size: 1.3em;
     }
-
-    ul {
-        padding-top: 20%;
-        padding-bottom: 20%;
-        padding-right: 50%;
-        padding-left: 10px;
-    }
-    li {
-        background: rgba($fondo, 0.4);
-        border-radius: 5px;
-
-        a {
-            color: white;
-            &:hover {
-                background: rgba($fondo, 0.6);
-            }
-
-            &:active {
-                background: $fondo;
-            }
-        }
-    }
-
-    .nav-pills > .active > a, .nav-pills > .active > a:hover {
-        background: rgba($fondo, 0.9);
-    }
-
-    // .row{
-    //     overflow: hidden; 
-    // }
-
-    // [class*="col-"]{
-    //     margin-bottom: -99999px;
-    //     padding-bottom: 99999px;
-    // }
-}
-
-#texto-asociacion {
-    padding-right: 20%;
 }
 
 .iframe-container{
@@ -293,30 +341,105 @@ nav {
     width: 100%;
 }
 
+#row-iconos-digital {
+    padding-bottom: 10vh;
+}
+
+.service-box {
+  max-width: 33vw;
+  margin: 50px auto 0;
+  h2 {
+    text-transform: none;
+  }
+
+  p {
+    padding: 0px 3vw;
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 992px) {
+  .service-box {
+    margin: 20px auto 0;
+
+  }
+}
+.service-box p {
+  margin-bottom: 0;
+}
+
+.sr-icons {
+    background-color: $azul-oscuro;
+    color: white;
+    border-radius: 55%;
+    padding: 40px;
+}
+
 #myCarousel2 {
     .carousel-caption {
         background-color: rgba(47, 46, 80, 0.8);
-        //padding: 30px;
+        padding: 10vh 5vw;
         margin: 0px;
         text-align: left;
         right: auto;
         left: 0;
         top: 0;
         max-width: 50%;
+        min-width: 50%;
         height: 100%;
-        padding-top: 20%;   
     }
 }
 
+#myCarousel3 {
+    .carousel-caption {
+        background-color: white;
+        padding: 30vh 5vw;
+        margin: 0px;
+        text-align: left;
+        right: 0;
+        left: 50%;
+        top: 0;
+        max-width: 50%;
+        min-width: 50%;
+        height: 100%;
+        color: #333;
+    }
+}
+
+#texto-final-educacion40 {
+    font-size: 2.3em;
+    padding: 15vh 0;
+    color: $azul-intermedio;
+}
+
 #row-datos {
-    background: $fondo;
+    background: $azul-oscuro;
 }
 
 #row-contacto {
-    background: $fondo;
+    background: $azul-oscuro;
 }
 
 @media (max-width: 767px) {
+    
+    #myCarousel3 {
+        .carousel-caption {
+            background-color: rgba(white, 0.5);
+            padding: 10vh 5vw;
+            margin: 0px;
+            text-align: center;
+            right: 0;
+            left: 0;
+            top: 0;
+            max-width: 100%;
+            min-width: 100%;
+            height: 100%;
+            color: #333;
+        }
+    }
+    .service-box {
+      max-width: 90%;
+    }
+
     .navbar-collapse .nav > .divider-vertical {
         display: none;
      }
@@ -329,14 +452,6 @@ nav {
         padding-bottom: 10px;
     }
 
-    #texto-fondos-perdidos {
-        font-size: 24px;
-    }
-
-    #texto-fondos-federales {
-        padding-right: 50px;
-    }
-
     #datos-barra {
         ul {
             padding: 15%;
@@ -344,11 +459,19 @@ nav {
     }
     
     body {
-        padding-top: 50px;
+        padding-top: 0px;
+    }
+    
+    #about {
+        padding: 0px;
+        font-size: 1em;
+        img {
+            max-width: 80vw;
+        }
     }
 
     .carousel-caption {
-        background-color: $fondo;
+        background-color: $azul-oscuro;
         padding: 10px;
         margin-bottom: 40px;
         //margin-top: 30px;
@@ -363,7 +486,7 @@ nav {
         h1, h2, h3, h4 {
             text-align: center;
             font-size: 25px;
-            text-transform: none;
+            //text-transform: none;
         }
 
         p {
@@ -374,20 +497,22 @@ nav {
             //position: absolute;
             //top: 0;
             //left: 0;
-            min-width: 100%;
-            min-height: 500px;
+            min-width: 100vw;
+            min-height: 100vh;
         }
     }
     #myCarousel {
         img {
-            min-width: 100%;
-            min-height: 300px;
+            //margin-top: 10vh;
+            //min-width: 100vw;
+            min-height: 100vh;
+            object-fit: cover;
         }
     }
 
     #myCarousel2 {
         .carousel-caption {
-            background-color: $fondo;
+            background-color: $azul-oscuro;
             padding: 10px;
             margin-bottom: 0px;
             //text-align: left;
@@ -448,6 +573,7 @@ nav {
         overflow: hidden!important;
     }
 }
+<<<<<<< HEAD
 
 .carousel-item {
     height: 100vh;
@@ -458,3 +584,5 @@ nav {
     -o-background-size: cover;
     background-size: cover;
 }
+=======
+>>>>>>> cambios-2

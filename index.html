@@ -18,6 +18,9 @@
 
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+	
+	<!-- Material Icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -38,63 +41,41 @@
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="50">
 	
-	 <!-- Navigation -->
+	<!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
+        <div class="container-fluid">
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-principal">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top"></a>
+        		<a class="navbar-brand page-scroll" href="#page-top"><img src="assets/img/logo.png" alt="Dispute Bills"></a>
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav navbar-left">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">¿Quiénes somos?</a>
-                    </li>
-                    <li class="divider-vertical"></li>
-                    <li>
-                        <a class="page-scroll" href="#fondos-federales">Fondos Federales</a>
-                    </li>
-                    <li class="divider-vertical"></li>
-                    <li>
-                        <a class="page-scroll" href="#capital-privado">Capital Privado</a>
-                    </li>
-                    <li class="divider-vertical"></li>
-                </ul>
+            <!-- Después de Toggle -->
+            <div id="navbar-principal" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
+                    <li><a class="page-scroll" href="#page-top">Inicio</a></li>
+                    <li class="divider-vertical"></li>
+                    <li><a class="page-scroll" href="#about">Nosotros</a></li>
+                    <li class="divider-vertical"></li>
+                    <li><a class="page-scroll" href="#educacion40">Educación 4.0</a></li>
                 	<li class="divider-vertical"></li>
-                    <li>
-                    	<a class="page-scroll" href="#financiamiento">Financiamiento y Co-Inversión</a>
-                    </li>
+                    <li><a class="page-scroll" href="#proyectos">Proyectos que Apoyamos</a></li>
+                	<li class="divider-vertical"></li>
+                    <li><a class="page-scroll" href="#fondosinversiones">Fondos e Inversiones</a></li>
                     <li class="divider-vertical"></li>
-                    <li>
-                    	<a class="page-scroll" href="#asociacion">Asociación Público-Privada</a>
-                    </li>
-                    <li class="divider-vertical"></li>
-                    <li>
-                    	<a class="page-scroll" href="#contacto">Contacto</a>
-                    </li>
+                    <li><a class="page-scroll" href="#contacto">Contacto</a></li>
                 </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
     </nav>
 	
 
-    <!-- Page Content -->
+    <!-- Carousel Inicio -->
 	<div class="container-fluid">
 		<div class="row">
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -106,29 +87,22 @@
 						<div class="carousel-caption">
 					        <h1>Bienvenidos a EduCapital</h1>
 					        <hr class="white-hr">
-					        <p>
-					        	Una compañía especializada en fondos e inversiones para proyectos de educación y programas de capacitación en el sector público y privado en México.
-					        </p>
 					    </div>
 					</div>
 					<div class="item">
 						<img class="fill" src="assets/img/slider-header/slider-2.jpg" alt="Chicago">
 						<div class="carousel-caption">
-					        <h1>¿Quiénes somos?</h1>
+					        <h1>Invertimos en Educación Digital y Plataformas 4.0</h1>
 					        <hr class="white-hr">
-					        <p>
-					        	Nos regimos bajo las mejores prácticas internacionales y operamos con un fuerte gobierno corporativo.
-					        </p>
 					    </div>
 					</div>
 					<div class="item">
 						<img class="fill" src="assets/img/slider-header/slider-3.jpg" alt="Chicago">
 						<div class="carousel-caption">
-					        <h1>Recursos Federales</h1>
-					        <hr class="white-hr">
-					        <p>
-					        	A fondo perdido para la educación. Desde <strong>$800,000 a $12'000,000</strong>
-					        </p>
+					        <h3>Recursos para la Educación</h3>
+					        <h1>
+					        	Desde <strong>$800,000 a $12,000,000</strong>
+					        </h1>
 					    </div>
 					</div>
 					<div class="item">
@@ -137,7 +111,7 @@
 					        <h1>Capital Privado</h1>
 					        <hr class="white-hr">
 					        <p>
-					        	Para la compra y venta de escuelas técnicas y tecnológicas privadas en diferentes especialidades.
+					        	Para escuelas técnicas y tecnológicas privadas en diferentes especialidades.
 					        </p>
 					    </div>
 					</div>
@@ -154,10 +128,20 @@
 					<div class="item">
 						<img class="fill" src="assets/img/slider-header/slider-6.jpg" alt="Chicago">
 						<div class="carousel-caption">
-					        <h1>Proyectos de Educación</h1>
+					        <h1>Equipamiento, Mobiliario</h1>
 					        <hr class="white-hr">
 					        <p>
-					        	Con el gobierno federal a través de asociaciones público-privadas.
+					        	Y cualquier insumo que las escuelas necesiten.
+					        </p>
+					    </div>
+					</div>
+					<div class="item">
+						<img class="fill" src="assets/img/slider-header/slider-7.jpg" alt="Chicago">
+						<div class="carousel-caption">
+					        <h1>Nos regimos bajo</h1>
+					        <hr class="white-hr">
+					        <p>
+					        	Las mejores prácticas internacionales y operamos con un fuerte gobierno corporativo.
 					        </p>
 					    </div>
 					</div>
@@ -174,258 +158,102 @@
 			</div>
 		</div>
 	</div>
-	
-	<!-- Sección Datos equis -->
-	<section id="datos-barra">
-        <div class="row" id="row-datos">
-            <div class="col-lg-6" style="background: url('assets/img/barra/barra1.jpg'); background-size: cover;">
-				<ul class="nav nav-pills nav-stacked">
-					<li class="active"><a href="#primero" data-toggle="tab">Proyectos de Educación 4.0</a></li>
-					<li><a href="#segundo" data-toggle="tab">Institutos Online 4.0</a></li>
-					<li><a href="#tercero" data-toggle="tab">Compra-Venta Escuelas Técnicas</a></li>
-					<li><a href="#cuarto" data-toggle="tab">Universidades Coroporativas 4.0</a></li>
-					<li><a href="#quinto" data-toggle="tab">Consultoría Educativa</a></li>
-					<li><a href="#sexto" data-toggle="tab">Capacitación Cursos Diplomados</a></li>
-				</ul>
-            </div>
-            <div class="col-lg-6 fondo-oscuro mitad-pantalla">
-            	<div class="tab-content text-center" id="myTabContent" >
-				  <div class="tab-pane fade active in" id="primero">
-				    <h3>Proyectos Educativos 4.0</h3>
-				    <hr>
-				    <p>
-				    	EduCapital cuenta con los recursos disponibles para proyectos educativos en los tres niveles de gobierno (municipal, estatal y federal), empresas privadas, sindicatos, cámaras y asociaciones empresariales.
-				    </p>
-				    <br>
-				    <br>
-				    <button class="btn btn-primary boton-blanco">Solicitud de Aplicación</button><br><br>
-				    <button class="btn btn-primary boton-blanco">Preguntas Frecuentes</button>
-				  </div>
-				  <div class="tab-pane fade" id="segundo">
-				    <h3>Institutos Online 4.0</h3>
-				    <hr>
-				    <p>
-				    	<strong>El boom de los institutos Online</strong> siguen acelerando empresas, usted puede convertir a sus cámaras y asociaciones empresariales, sindicatos y proyectos educativos de altas especialidades técnicas en un instituto digital. EduCapital tiene fondos disponibles para sus proyectos futuros.
-				    </p>
-				    <br>
-				    <br>
-				    <button class="btn btn-primary boton-blanco">Solicitud de Aplicación</button><br><br>
-				    <button class="btn btn-primary boton-blanco">Asociación</button><br><br>
-				    <button class="btn btn-primary boton-blanco">Preguntas Frecuentes</button>
-				  </div>
-				  <div class="tab-pane fade" id="tercero">
-				    <h3>Compra-Venta</h3>
-				    <h3>Escuelas Técnicas</h3>
-				    <hr>
-				    <p>
-				    	<strong>EduCapital</strong> es un excelente promotor e inversor de la compra y venta de escuelas politécnicas y tecnológicas.
-				    </p>
-				    <br>
-				    <br>
-				    <button class="btn btn-primary boton-blanco">Solicitud de Aplicación</button><br><br>
-				    <button class="btn btn-primary boton-blanco">Preguntas Frecuentes</button>
-				  </div>
-				  <div class="tab-pane fade" id="cuarto">
-				  	<h3>Consultoría <br> Educativa</h3>
-				    <hr>
-				    <p>
-				    	<strong>EduCapital</strong> es un excelente promotor e inversor de la compra y venta de escuelas politécnicas y tecnológicas.
-				    </p>
-				    <br>
-				    <br>
-				    <button class="btn btn-primary boton-blanco">Solicitud de Aplicación</button><br><br>
-				    <button class="btn btn-primary boton-blanco">Preguntas Frecuentes</button>
-				  </div>
-				  <div class="tab-pane fade" id="quinto">
-				  	<h3>Consultoría <br> Educativa</h3>
-				    <hr>
-				    <p>
-				    	Disponemos de especialistas en las diferentes áreas del proceso educativo, desde el nacimiento de un proyecto educativo hasta su institucionalización y gobierno corporativo.
-				    </p>
-				    <br>
-				    <br>
-				    <button class="btn btn-primary boton-blanco">Solicitud de Aplicación</button><br><br>
-				    <button class="btn btn-primary boton-blanco">Preguntas Frecuentes</button>
-				  </div>
-				  <div class="tab-pane fade" id="sexto">
-				  	<h3>Capacitación <br> Cursos-Diplomados</h3>
-				    <hr>
-				    <p>
-				    	Contamos con financiamiento disponible para programas de capacitación a través de cursos, diplomados, seminarios, conferencias y congresos nacionales e internacionales, en cualquier ámbito y género institucional y empresarial, cursos privados.
-				    </p>
-				    <br>
-				    <br>
-				    <button class="btn btn-primary boton-blanco">Solicitud de Aplicación</button><br><br>
-				    <button class="btn btn-primary boton-blanco">Preguntas Frecuentes</button>
-				  </div>
-				</div>
-            </div>
-        </div>
-    </section>
-    <hr class="hr-sin-borde">
+	<hr class="hr-sin-borde">
 
     <!-- Acerca de EduCapital -->
     <section id="about">
     	<div class="container">
     		<div class="row">
     			<div class="col-lg-8 col-lg-offset-2 text-center">
-    				<h1>EduCapital</h1>
-    				<h3>
-    					Es una firma de capital privado especializada en proyectos de educación y programas de capacitación para el sector público y privado de México.
-    				</h3>
-    				<h3>
-    					Está constituída por un equipo de directores especializados en fondos nacionales e internacionales y opera con un fuerte gobierno corporativo
-    				</h3>
+    				<h1>Nosotros</h1>
+    				<br>
+    				<p>
+    					EduCapital es un fondo de inversión de capital privado internacional que busca oportunidades de inversión, coinversión y financiamiento en la creación, desarrollo y fortalecimiento del sector público y privado de México en proyectos de Educación y Capacitación 4.0.
+    				</p>
+    				<p>
+    					Somos una compañía institucional y global con más de 17 años de experiencia invirtiendo en proyectos de educación y capacitación, certificaciones, licencias y plataformas de educación politécnica y superior en diferentes áreas, incluyendo el sector docente, gas y petróleo, minería, salud, manufactura, automotriz, agroalimentaria, administración pública, entre otros, en México, Estados Unidos y Colombia
+    				</p>
+    				<p>
+    					Contamos con un equipo de directores especializados en educación digital, fondos e inversiones y operamos  con un fuerte gobierno corporativo
+    				</p>
+    				<p>
+    					Invertimos en Plataformas digitales, contenidos académicos y licencias a través de videos de aprendizaje bajo demanda, e-learning y tecnologías online en vivo, la nueva modalidad de educación que está transformando el mundo
+    				</p>
+
     			</div>
     		</div>
     	</div>
     </section>
 	<hr class="hr-sin-borde">
-	<!-- Fondos Federales -->
-	<section id="fondos-federales">
-		<div class="row">
-			<div class="col-lg-6" id="texto-fondos-federales">
-				<h2>Fondos Federales</h2>
-				<hr>
-				<p>
-					El Gobierno Federal y los Gobiernos Estatales, a través de sus secretarías y organismos, cuentan con <strong>diversos programas de apoyo a fondo perdido, subsidios y créditos para el desarrollo de proyectos sustentables de Educación y Capacitación</strong> que incentivan el crecimiento y desarrollo económico y social de México.
-				</p>
-				<p>
-					En EduCapital disponemos de un equipo de especialistas en Recursos Federales a Fondo Perdido y le brindamos todo nuestro conocimiento, experiencia y herramientas para evaluar la <strong>factibilidad de su proyecto con todos sus anexos y lineamientos técnicos para participar en diferentes convocatorias.</strong>
-				</p>
-				<br><br>
-				<button class="btn boton-blanco">Preguntas <br> Frecuentes</button>
-				<button class="btn boton-blanco">Solicitud De <br> Aplicación</button>
-			</div>
-			<div class="col-lg-6">
-				<img src="assets/img/fondos-federales.jpg" class="img img-responsive pull-right" id="imagen-fondos-federales">
-			</div>
-		</div>
-		<div class="row text-center fondo-oscuro">
-			<div class="col-lg-10 col-lg-offset-1">
-				<h1 id="texto-fondos-perdidos">
-					¡Usted puede obtener desde <strong>$800,000 hasta $12,000,000</strong> a fondo perdido!
-				</h1>
-			</div>
-			<div class="col-sm-4">
-				<img src="assets/img/logos-socios/inadem.png" class="imagen-socio">
-			</div>
-			<div class="col-sm-4">
-				<img src="assets/img/logos-socios/conacyt.png" class="imagen-socio">
-			</div>
-			<div class="col-sm-4">
-				<img src="assets/img/logos-socios/sagarpa.png" class="imagen-socio">
-			</div>
-		</div>
-	</section>
 
-	<!-- Sección Capital Privado -->
-	<section id="capital-privado">
+	<!-- Sección Educación 4.0 -->
+	<section id="educacion40">
 		<div class="container-fluid">
-			<div class="row imagen-fondo" style="background-image: url('assets/img/capital-privado.jpg');">
-				<div class="col-lg-6 col-lg-offset-1" id="texto-capital-privado">
-					<h1>Capital Privado</h1>
-					<hr class="">
+			<div class="row imagen-fondo" id="imagen-fondo-40" style="background-image: url('assets/img/educacion40.jpg');">
+				<div class="col-lg-6 col-lg-offset-3" id="tituloEducacion40"><h1>Educación 4.0</h1></div>
+				<div class="col-lg-6" id="texto-educacion40">
 					<p>
-						EduCapital está integrado por inversionistas profesionales con visión de largo plazo que participan activamente en diferentes rondas, financiamiento y adquisición de Escuelas Técnicas y Tecnológicas privadas en diferentes especialidades con gran potencial de crecimiento.
+						La tecnología es un catalizador clave del proceso de transformación digital de la Educación actualmente y este cambio digital en el sector educativo ya es un proceso de gran impacto e irreversible. Ahora la escuela tradicional transita hacia la Educación digital 4.0 y está caracterizada por los nuevos modelos de aprendizaje a través de plataformas de educación, e-learning, videos de educación bajo demanda y online en vivo, herramientas indispensables para entender el mundo escolar y su conexión laboral y digital de hoy.
 					</p>
-					<br><br>
-					<button class="btn btn-primary boton-blanco">Preguntas Frecuentes</button>
-					<button class="btn btn-primary boton-blanco">Solicitud de Aplicación</button>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
 				</div>
 			</div>
-			<div class="row" style="background-color: #2F80ED; color: white">
-				<div class="col-lg-10 col-lg-offset-1">
-					<div class="media" style="padding-top: 50px;">
-						<div class="media-left" style="width: 200px;">
-							<span class="fa fa-graduation-cap fa-3x"></span>
-						</div>
-						<div class="media-body">
-							También disponemos de fondos para <strong>proyectos de Educación 4.0 para Universidades e Institutos públicos y privados</strong> comprometidos con el futuro de la educación, con amplio espectro de competencias, actitudes y experiencias, tanto digitales como de innovación, emprendimiento y creatividad.
-						</div>
-					</div>
-					<div class="media">
-						<div class="media-left" style="width: 200px;">
-							<span class="fa fa-handshake-o fa-3x"></span>
-						</div>
-						<div class="media-body">
-							Nos convertiemos en <strong>socios y asesores</strong> de las escuelas donde invertimos.
-						</div>
-					</div>
-					<div class="media" style="padding-bottom: 50px;">
-						<div class="media-left" style="width: 150px;">
-							<span class="fa fa-money fa-4x"></span>
-						</div>
-						<div class="media-body">
-							Aportamos capital, asesoría estratégica, operativa, financiera y legal, <strong>así como los contactos comerciales y financieros.</strong>
-						</div>
-					</div>
-			    </div>
-			</div>
-		</div>
-	</section>
-	<hr class="hr-sin-borde">
-
-	<!-- Sección Financiamento y Co-Inversión -->
-	<section id="financiamiento">
-		<div class="container-fluid">
 			<div class="row">
-				<div class="col-lg-6 col-lg-offset-3">
-					<h1>Financiamiento y Co-Inversión</h1>
-					<hr>
-					<h3>EduCapital dispone de fondos para la creación, aceleración y financiamiento de:</h3>
+				<div class="col-lg-8 col-lg-offset-2 text-center" id="eduDigitaltitulo">
+					<p>La Educación Digital 4.0 cambia el universo y alcance del alumno, incluyendo:</p>
 				</div>
 			</div>
+			<div class="row" id="row-iconos-digital">
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-5x fa-graduation-cap sr-icons"></i>
+                        <h2>Aprendizaje Flexible</h2>
+                        <p class="text-muted">en función de las necesidades e intereses de cada alumno.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-5x fa-leanpub sr-icons"></i>
+                        <h2>Aprendizaje al ritmo propio</h2>
+                        <p class="text-muted">y a la velocidad de cada alumno con independencia de su edad y curso</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-5x fa-television sr-icons"></i>
+                        <h2>Aprendizaje Digital</h2>
+                        <p class="text-muted">con feedback constante a partir del análisis de los datos derivados del progreso del propio aprendizaje (Learning Analytics).</p>
+                    </div>
+                </div>
+            </div>
 			<div class="row">
 				<div id="myCarousel2" class="carousel slide" data-ride="carousel">
-					
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner">
 						<div class="item active">
 							<img src="assets/img/galeria/galeria-1.jpg" alt="Los Angeles">
 							<div class="carousel-caption">
-						        <h1>Institutos Online 4.0</h1>
+						        <h1>Proyectos Educativos</h1>
 						        <hr class="white-hr">
 						        <p>
-						        	Fondos disponibles para cámaras y asociaciones empresariales, sindicatos y proyectos educativos de altas especialidades técnicas.
+						        	Los proyectos educativos por tanto ahora deben ser de aprendizaje flexible, al propio ritmo y basado en la analítica de datos, a través de plataformas de educación online.
 						        </p>
-						        <div class="col-lg-6 col-lg-offset-3">
-						        	<button class="btn btn-block boton-blanco">Solicitud de Aplicación</button><br>
-						        	<button class="btn btn-block boton-blanco">Preguntas Frecuentes</button>
-						        </div>
+								<p>
+									El futuro de la educación ahora abarca un amplio espectro de competencias, actitudes y experiencias tanto digitales como de innovación, emprendimiento y creatividad.
+								</p>
+								<p>
+									Los programas académicos y los docentes tradicionales se integran a un mundo digital y alumnos.
+								</p>
 						    </div>
 						</div>
 						<div class="item">
 							<img src="assets/img/galeria/galeria-2.jpg" alt="Chicago">
 							<div class="carousel-caption">
-						        <h1>Departamentos de Educación Contínua en Universidades Públicas y Privadas</h1>
-						        <hr class="white-hr">
 						        <p>
-						        	El negocio de la educación continua puede convertirse en el principal generador de ingresos de una escuela. Disponemos de fondos, asociaciones, licencias y concesiones para acelerar departamentos de educación continua.
-						        </p>
-						        <div class="col-lg-6 col-lg-offset-3">
-						        	<button class="btn btn-block boton-blanco">Solicitud de Aplicación</button><br>
-						        	<button class="btn btn-block boton-blanco">Preguntas Frecuentes</button>
-						        </div>
-						    </div>
-						</div>
-						<div class="item">
-							<img src="assets/img/galeria/galeria-3.jpg" alt="New York">
-							<div class="carousel-caption">
-						        <h1>Universidades Corporativas 4.0</h1>
-						        <hr class="white-hr">
-						        <p>
-						        	El boom de las Universidades Corporativas siguen acelerando empresas, usted puede convertir su empresa en una escuela digital, como lo hace &trade; Mc Donald's y las grandes corporaciones del mundo, EduCapital tiene una excelente opción de negocios para usted.
-						        </p>
-						        <div class="col-lg-6 col-lg-offset-3">
-						        	<button class="btn btn-block boton-blanco">Solicitud de Aplicación</button><br>
-						        	<button class="btn btn-block boton-blanco">Preguntas Frecuentes</button>
-						        </div>
+						        	La cuestión para las escuelas no es si se suben o no a la ola imparable de la transformación digital ya que las que no lo hagan desaparecerán-, sino la velocidad a la que van realizar este proceso.
+								</p>
+								<p>
+ 									En este sentido, la tecnología ha impactado en los proyectos y los sistemas educativos, ahora se tendrá que dar un cambio en las prácticas sociales y de la cultura de los centros educativos, universidades y administraciones públicas; la formación del profesorado y de los equipos directivos; así como el estímulo, atracción y desarrollo del talento de los profesores que han de hacer posible desde las escuelas de magisterio esta Educación 4.0.
+ 								</p>
 						    </div>
 						</div>
 					</div>
@@ -440,27 +268,142 @@
 					</a>
 				</div>
 			</div>
+			<div class="row" id="texto-final-educacion40">
+				<div class="col-lg-10 col-lg-offset-1 text-center">
+					<p>
+						En este sentido, EduCapital apoya e impulsa las iniciativas educativas a través del financiamiento y, ahora al igual que ya se hace con el ecosistema de las “startups”, busca el desarrollo de soluciones innovadoras para poner en marcha las escuelas y proyectos educativos 4.0. 
+					</p>
+				</div>
+			</div>
 		</div>
 	</section>
-	<hr class="hr-sin-borde">
-
-	<!-- Sección Asociación Público Privada -->
-	<section id="asociacion">
-		<div class="row">
-			<div class="col-lg-6">
-				<img src="assets/img/asociaciones.jpg" class="img img-responsive" alt="">
+	<hr class="hr-sin-borde-rojo">
+	
+	<!-- Seccion Proyectos -->
+	<section id="proyectos">
+		<div class="container-fluid">
+			<div class="row" id="tituloProyectosApoyamos">
+				<h1>Proyectos que apoyamos</h1>
 			</div>
-			<div class="col-lg-6 text-center" id="texto-asociaciones">
-				<h1>Asociaciones <br> Público-Privadas</h1>
-				<hr>
-				<p>
-					EduCapital apoya al <strong>Gobierno Federal y Gobiernos Estatales</strong> en la conformación de Asociaciones Público-Privadas para mejorar el acceso a la educación del País.
-				</p>
-				<p>
-					Participamos con financiamiento,<strong> licencias, concesiones y accesorios académicos</strong> nacionales e internacionales de acuerdo al alcance del proyecto.
-				</p>
-				<button class="btn boton-blanco">Solicitud de Aplicación</button><br><br>
-				<button class="btn boton-blanco">Preguntas Frecuentes</button>
+			<div class="row match-my-cols">
+				<div class="col-lg-3 col-sm-6 text-center tarjeta-azul">
+					<i class="fa fa-5x fa-lightbulb-o" aria-hidden="true"></i>
+					<p>Inversión y Desarrollo de Startups Educativas</p>
+				</div>
+				<div class="col-lg-3 col-sm-6 text-center tarjeta-azul-claro">
+					<i class="fa fa-5x fa-graduation-cap" aria-hidden="true"></i>
+					<p>Expansión de programas académicos y territorio</p>
+				</div>
+				<div class="col-lg-3 col-sm-6 text-center tarjeta-azul-intermedio">
+					<i class="fa fa-5x fa-mobile" aria-hidden="true"></i>
+					<p>Transición de programas académicos prescenciales a Online y Tutorías</p>
+				</div>
+				<div class="col-lg-3 col-sm-6 text-center tarjeta-azul">
+					<i class="fa fa-5x fa-desktop" aria-hidden="true"></i>
+					<p>Institutos Online</p>
+				</div>
+			</div>
+			<div class="row match-my-cols">
+				<div class="col-lg-3 col-sm-6 text-center tarjeta-azul-claro">
+					<i class="fa fa-5x fa-university" aria-hidden="true"></i>
+					<p>Universidades Corporativas</p>
+				</div>
+				<div class="col-lg-3 col-sm-6 text-center tarjeta-azul-intermedio">
+					<i class="fa fa-5x fa-certificate" aria-hidden="true"></i>
+					<p>Programas de Capacitación, Diplomados y Consultorías</p>
+				</div>
+				<div class="col-lg-3 col-sm-6 text-center tarjeta-azul">
+					<i class="fa fa-5x fa-money" aria-hidden="true"></i>
+					<p>Financiamiento de Proyectos de Educación para Gobiernos</p>
+				</div>
+				<div class="col-lg-3 col-sm-6 text-center tarjeta-azul-claro">
+					<i class="material-icons md-48">monetization_on</i>
+					<p>Financiamiento de Proyectos Sindicales</p>
+				</div>
+			</div>
+			<div class="row match-my-cols">
+				<div class="col-lg-3 col-sm-6 text-center tarjeta-azul-intermedio">
+					<i class="fa fa-5x fa-cogs" aria-hidden="true"></i>
+					<p>Inversión de Escuelas Politécnicas</p>
+				</div>
+				<div class="col-lg-3 col-sm-6 text-center tarjeta-azul">
+					<i class="fa fa-5x fa-flask" aria-hidden="true"></i>
+					<p>Arrendamiento de Equipo Escolar, Mobiliario, Laboratorios y Comedores Escolares</p>
+				</div>
+				<div class="col-lg-3 col-sm-6 text-center tarjeta-azul-claro">
+					<i class="material-icons md-48">build</i>
+					<p>Mantenimiento y Remodelación Escolar</p>
+				</div>
+				<div class="col-lg-3 col-sm-6 text-center tarjeta-azul-intermedio">
+					<i class="fa fa-5x fa-money" aria-hidden="true"></i>
+					<p>Financiamiento de Privado de Proyectos Educativos</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<hr class="hr-sin-borde-rojo">
+
+	<!-- Sección Fondos e Inversiones -->
+	<section id="fondosinversiones">
+		<div class="container-fluid">
+			<div class="row" id="tituloProyectosApoyamos">
+				<h1>Fondos e Inversiones</h1>
+			</div>
+			<div class="row">
+				<div id="myCarousel3" class="carousel slide" data-ride="carousel">
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="assets/img/fondos-inversiones/1.jpg" alt="Fondos e Inversiones">
+							<div class="carousel-caption">
+						        <p>
+						        	<strong>Capital Privado disponible para proyectos de Educación 4.0</strong> para los diferentes niveles académicos de México.
+						        </p>
+						    </div>
+						</div>
+						<div class="item">
+							<img src="assets/img/fondos-inversiones/2.jpg" alt="Fondos e Inversiones">
+							<div class="carousel-caption">
+						        <p>
+						        	<strong>Coinversión en Institutos Online y Fondos para Universidades Corporativas</strong> para proyectos de educación en el sector privado y público, sindicatos, cámaras y asociaciones empresariales.
+ 								</p>
+						    </div>
+						</div>
+						<div class="item">
+							<img src="assets/img/fondos-inversiones/3.jpg" alt="Chicago">
+							<div class="carousel-caption">
+						        <p>
+						        	<strong>Inversión en escuelas técnicas y tecnológicas</strong> privadas en diferentes especialidades.
+ 								</p>
+						    </div>
+						</div>
+						<div class="item">
+							<img src="assets/img/fondos-inversiones/4.jpg" alt="Chicago">
+							<div class="carousel-caption">
+						        <p>
+						        	<strong>Financiamiento Multianual de Programas Integrales de Capacitación para Instituciones de Gobierno.</strong>
+ 								</p>
+						    </div>
+						</div>
+						<div class="item">
+							<img src="assets/img/fondos-inversiones/5.jpg" alt="Chicago">
+							<div class="carousel-caption">
+						        <p>
+						        	<strong>Arrendamiento de mobiliario, equipo de cómputo, infraestructura</strong> y equipo para laboratorios, comedores escolares y cualquier insumo que las escuelas necesiten.
+ 								</p>
+						    </div>
+						</div>
+					</div>
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel3" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel3" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
 			</div>
 		</div>
 	</section>
