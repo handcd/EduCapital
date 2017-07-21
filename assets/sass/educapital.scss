@@ -31,7 +31,7 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
     font-family: Montserrat;
-    //padding-top: 3vh;
+    padding-top: 3vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -372,6 +372,19 @@ nav {
     color: white;
     border-radius: 55%;
     padding: 40px;
+}
+
+#myCarousel {
+    .carousel-caption {
+        font-weight: 900;
+        font-size: 2.3em;
+        height: 40vh;
+        padding: 3vh 10vh;
+
+        h1, h2, h3 {
+            text-transform: none;
+        }
+    }
 }
 
 #myCarousel2 {
