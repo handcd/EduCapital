@@ -448,33 +448,33 @@
 								<div class="list-group panel-body">
 									<a href="#q" class="list-group-item" data-toggle="collapse" data-target="#sm1" data-parent="#menu1">Misión</a>
 									<div id="sm1" class="sublinks collapse">
-										<a class="list-group-item small">
+										<div class="list-group-item small">
 											Fomentar la cultura de fondos, inversiones y financiamiento para el sector educativo y programas de capacitación en México.
-										</a>
+										</div>
 									</div>
 									<a href="#q" class="list-group-item" data-toggle="collapse" data-target="#sl1" data-parent="#menu1">Visión</a>
 									<div id="sl1" class="sublinks collapse">
-										<a class="list-group-item small">
+										<div class="list-group-item small">
 											Ser una compañía sólida con un fuerte liderazgo en fondos e inversiones.
-										</a>
+										</div>
 									</div>
 									<a href="#q" class="list-group-item" data-toggle="collapse" data-target="#so1" data-parent="#menu1">Objetivos</a>
 									<div id="so1" class="sublinks collapse">
-										<a class="list-group-item small">
+										<div class="list-group-item small">
 											<ol>
 												<li>Gobernar la compañía a través de un vigoroso Consejo de Administración integrado por socios y consejeros independientes bajo la supervisión de Deloitte.</li>
 												<li>Administrar e invertir fondos de capital privado y recursos aportados por entidades gubernamentales en proyectos de educación y capacitación en México.</li>
 												<li>Ofrecer diferentes opciones de fondeo a institutos politécnicos y tecnológicos con alto potencial e impacto social en México.</li>
 												<li>Fomentar el talento, la mentalidad y el liderazgo de equipos en nuestro modelo de negocios y su impacto en la organización.</li>
 											</ol>
-										</a>
+										</div>
 									</div>
 									<!-- Código de Ética || TRIGGER -->
 									<a href="#q" class="list-group-item" data-toggle="modal" data-target="#modalEtica" data-parent="#menu1">Código de Ética</a>
 									
 									<a href="#q" class="list-group-item" data-toggle="collapse" data-target="#sp1" data-parent="#menu1">Gobierno Corporativo</a>
 									<div id="sp1" class="sublinks collapse">
-										<a class="list-group-item small">
+										<div class="list-group-item small">
 											<p>
 												El Consejo de Administración de Educapital se conforma por cuatro consejeros institucionales y cuatro consejeros independientes bajo la supervisión de Deloitte. Con esta estructura se asegura el seguimiento de las mejores prácticas institucionales de Gobierno Corporativo.
 											</p>
@@ -495,7 +495,7 @@
 													Que apoya al consejo respecto a la revisión de manuales, políticas, nominación y evaluación de consejeros y directivos. Perfiles de puestos, planes de compensación y transacciones con partes relacionadas.
 												</li>
 											</ul>
-										</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -584,15 +584,15 @@
 									</div>
 									<a href="#q" class="list-group-item"  data-target="#sl3" data-parent="#menu3">Decálogo de las escuelas obsoletas</a>
 									<div id="sl3" class="sublinks collapse">
-										<a class="list-group-item small">
+										<div class="list-group-item small">
 											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, repudiandae ipsum eum qui alias recusandae porro! Dolore facilis amet nostrum rem molestiae blanditiis, nisi quod vero earum eligendi distinctio inventore.
-										</a>
+										</div>
 									</div>
 									<a href="#q" class="list-group-item"  data-target="#so3" data-parent="#menu3">Talento 4.0</a>
 									<div id="so3" class="sublinks collapse">
-										<a class="list-group-item small">
+										<div class="list-group-item small">
 											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta repudiandae libero possimus quia hic nulla atque, facere reiciendis voluptatem dolorem numquam id recusandae sapiente esse velit vitae quisquam dicta nisi.
-										</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -633,7 +633,7 @@
 					</div>
 				</div>
 				
-				<!-- Modal Copyright-->
+				<!-- Modal Términos y Condiciones-->
 				<div class="modal fade" id="modalTerms" role="dialog">
 					<div class="modal-dialog">
 						<!-- Modal content-->
@@ -886,6 +886,22 @@
 						var $this = $(this);
 						$this.css('margin-top', $this.parent().height() - $this.height())
 						});
+				</script>
+				<script type="text/javascript">
+					const items = document.querySelectorAll(".list-group-item[data-toggle='collapse'");
+					const color = '#1E1E34';
+
+					function cambiarFondo(e){
+						if ($(this).attr('aria-expanded') === "false") {
+							this.style.backgroundColor = color;
+							this.style.color = '#ffffff';
+						} else {
+							this.style.backgroundColor = '#ffffff';
+							this.style.color = '#333';
+						}
+					}
+
+					items.forEach(item => item.addEventListener('click', cambiarFondo));
 				</script>
 			</body>
 		</html>
