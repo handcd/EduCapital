@@ -1,1 +1,7 @@
-.sass-cache/
+# EduCapital
+# HAND Creative Design, 2017 <3
+# Not tracking common cache files
+
+# SASS
+assets/.sass-cache
+assets/.sass-cache/*
