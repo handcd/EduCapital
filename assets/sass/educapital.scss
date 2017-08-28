@@ -277,25 +277,34 @@ nav {
 
     .panel {
         border: 0px;
-
+        
     }
 
     .panel-heading {
-        border-bottom-width: 2px;
+        border-bottom-width: 3px;
         border-bottom-color: $azul-oscuro;
         background: none;
     }
+
+    .panel-body {
+        box-shadow: none;
+    }
+
+    
 }
 
 .tarjeta-azul {
     padding: 10px;
     color: white;
     background-color: $azul-oscuro;
-    .fa {
-        color: white;
-    }
+    transition: 0.3s;
+    border: 2px solid $azul-oscuro;
     p {
         font-size: 1.3em;
+    }
+    &:hover {
+        background-color: #f5f5f5;
+        color: $azul-oscuro;
     }
 }
 
@@ -303,11 +312,14 @@ nav {
     padding: 10px;
     color: white;
     background-color: $azul-claro;
-    .fa {
-        color: white;
-    }
+    transition: 0.3s;
+    border: 2px solid $azul-oscuro;
     p {
         font-size: 1.3em;
+    }
+    &:hover {
+        background-color: #f5f5f5;
+        color: $azul-claro;
     }
 }
 
@@ -315,11 +327,14 @@ nav {
     padding: 10px;
     color: white;
     background-color: $azul-intermedio;
-    .fa {
-        color: white;
-    }
+    transition: 0.3s;
+    border: 2px solid $azul-oscuro;
     p {
         font-size: 1.3em;
+    }
+    &:hover {
+        background-color: #f5f5f5;
+        color: $azul-intermedio;
     }
 }
 
@@ -372,6 +387,13 @@ nav {
     color: white;
     border-radius: 55%;
     padding: 40px;
+    transition: 0.5s;
+    border: 5px solid $azul-oscuro;
+
+    &:hover {
+        background-color: #f5f5f5;
+        color: $azul-oscuro;
+    }
 }
 
 #myCarousel {
