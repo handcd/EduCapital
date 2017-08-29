@@ -100,6 +100,9 @@ nav {
     font-size: 1.1em; }
     #texto-educacion40 h1 {
       font-size: 1.6em; } }
+.list-group-item {
+  transition: 0.5s; }
+
 #copyright-footer {
   background-color: #1E1E34;
   padding: 30px; }
@@ -110,6 +113,18 @@ nav {
 
 #navbar-principal {
   padding-right: 5vw; }
+  #navbar-principal .page-scroll {
+    transition: 0.2s;
+    margin: 5px; }
+    #navbar-principal .page-scroll:hover {
+      background-color: #1E1E34;
+      color: white;
+      border-radius: 5px; }
+  #navbar-principal .active > a {
+    background-image: none;
+    background-color: rgba(30, 30, 52, 0.4);
+    color: #1E1E34;
+    border-radius: 5px; }
 
 .navbar-brand {
   padding: 0px; }

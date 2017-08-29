@@ -124,6 +124,10 @@ nav {
     }
 }
 
+.list-group-item {
+    transition: 0.5s;
+}
+
 #copyright-footer {
     background-color: $azul-oscuro;
     padding: 30px;
@@ -136,6 +140,23 @@ nav {
 
 #navbar-principal {
     padding-right: 5vw;
+
+    .page-scroll {
+        transition: 0.2s;
+        margin: 5px;
+        &:hover {
+            background-color: $azul-oscuro;
+            color: white;
+            border-radius: 5px;
+        }
+    }
+
+    .active > a {
+        background-image: none;
+        background-color: rgba($azul-oscuro, 0.4);
+        color: $azul-oscuro;
+        border-radius: 5px;
+    }
 }
 
 .navbar-brand {

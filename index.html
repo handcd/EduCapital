@@ -878,30 +878,17 @@
 				<!-- Scrolling Nav JavaScript -->
 				<script src="assets/js/jquery.easing.min.js"></script>
 				<script src="assets/js/scrolling-nav.js"></script>
-				<!-- Fon Awesome -->
+				<!-- Font Awesome -->
 				<script src="https://use.fontawesome.com/6136fc8f13.js"></script>
+
+				<!-- Footer Functionality -->
+				<script src="assets/js/footer.js"></script>
 				
 				<script>
 					$('.pull-down').each(function() {
 						var $this = $(this);
 						$this.css('margin-top', $this.parent().height() - $this.height())
 						});
-				</script>
-				<script type="text/javascript">
-					const items = document.querySelectorAll(".list-group-item[data-toggle='collapse'");
-					const color = '#1E1E34';
-
-					function cambiarFondo(e){
-						if ($(this).attr('aria-expanded') === "false") {
-							this.style.backgroundColor = color;
-							this.style.color = '#ffffff';
-						} else {
-							this.style.backgroundColor = '#ffffff';
-							this.style.color = '#333';
-						}
-					}
-
-					items.forEach(item => item.addEventListener('click', cambiarFondo));
 				</script>
 			</body>
 		</html>
