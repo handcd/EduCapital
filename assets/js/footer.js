@@ -1,14 +1,11 @@
 const items = document.querySelectorAll(".list-group-item[data-toggle='collapse'");
-const color = '#1E1E34';
 
 function cambiarFondo(e){
 	setTimeout(() => {
 		if ($(this).attr('aria-expanded') === "false") {
-			this.style.backgroundColor = '#ffffff';
-			this.style.color = '#333';
+			$(this).removeClass('list-group-item-active');
 		} else {
-			this.style.backgroundColor = color;
-			this.style.color = '#ffffff';
+			$(this).addClass('list-group-item-active');
 		}
 	},100);
 }

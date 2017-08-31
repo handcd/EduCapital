@@ -10,6 +10,7 @@
 $azul-oscuro: #1E1E34;
 $azul-claro: #0000ff;
 $azul-intermedio: #3d3d9b;
+$gris: #f5f5f5;
 
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
@@ -124,10 +125,6 @@ nav {
     }
 }
 
-.list-group-item {
-    transition: 0.5s;
-}
-
 #copyright-footer {
     background-color: $azul-oscuro;
     padding: 30px;
@@ -156,6 +153,55 @@ nav {
         background-color: rgba($azul-oscuro, 0.4);
         color: $azul-oscuro;
         border-radius: 5px;
+    }
+}
+
+.modal-content {
+    background-color: $gris;
+    
+    .modal-body {
+        h1, h2, h3 {
+            color: $azul-oscuro;
+        }
+    }
+
+    .modal-header {
+        background-color: $azul-oscuro;
+        color: white;
+    }
+    
+    .modal-footer {
+        background-color: $azul-oscuro;
+        color: white;
+
+        .btn-primary {
+            background-color: $azul-oscuro;
+            color: white;
+            border: 2px solid white;
+            border-radius: 5px;
+            background-image: none;
+            transition: 0.3s;
+
+            &:hover {
+                background-color: white;
+                color: $azul-oscuro;
+            }
+        }
+    }
+
+    .close {
+        text-shadow: none;
+        opacity: unset;
+        color: white;
+        border: 2px solid white;
+        border-radius: 55%;
+        padding: 8px 15px;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: $gris;
+            color: $azul-oscuro;
+        }
     }
 }
 
@@ -297,6 +343,25 @@ nav {
     padding: 30px;
     font-size: 1.1em;
     line-height: 1.9;
+
+    a.list-group-item {
+        transition: 0.2s;
+
+        &:hover {
+            background-color: $azul-oscuro;
+            color: white;
+        }
+    }
+
+    .list-group-item-active {
+        background-color: $azul-oscuro;
+        color: white;
+
+        &:hover {
+            background-color: rgba($azul-oscuro, 0.5);
+        }
+    }
+
     .panel {
         border: 0px;
         
