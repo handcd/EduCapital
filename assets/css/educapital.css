@@ -110,6 +110,50 @@ nav {
 
 #navbar-principal {
   padding-right: 5vw; }
+  #navbar-principal .page-scroll {
+    transition: 0.2s;
+    margin: 5px; }
+    #navbar-principal .page-scroll:hover {
+      background-color: #1E1E34;
+      color: white;
+      border-radius: 5px; }
+  #navbar-principal .active > a {
+    background-image: none;
+    background-color: rgba(30, 30, 52, 0.4);
+    color: #1E1E34;
+    border-radius: 5px; }
+
+.modal-content {
+  background-color: #f5f5f5; }
+  .modal-content .modal-body h1, .modal-content .modal-body h2, .modal-content .modal-body h3 {
+    color: #1E1E34; }
+  .modal-content .modal-header {
+    background-color: #1E1E34;
+    color: white; }
+  .modal-content .modal-footer {
+    background-color: #1E1E34;
+    color: white; }
+    .modal-content .modal-footer .btn-primary {
+      background-color: #1E1E34;
+      color: white;
+      border: 2px solid white;
+      border-radius: 5px;
+      background-image: none;
+      transition: 0.3s; }
+      .modal-content .modal-footer .btn-primary:hover {
+        background-color: white;
+        color: #1E1E34; }
+  .modal-content .close {
+    text-shadow: none;
+    opacity: unset;
+    color: white;
+    border: 2px solid white;
+    border-radius: 55%;
+    padding: 8px 15px;
+    transition: 0.3s; }
+    .modal-content .close:hover {
+      background-color: #f5f5f5;
+      color: #1E1E34; }
 
 .navbar-brand {
   padding: 0px; }
@@ -218,40 +262,65 @@ nav {
     font-size: 3.5em; }
 
 #footer-menus {
-  padding: 30px; }
+  padding: 30px;
+  font-size: 1.1em;
+  line-height: 1.9; }
+  #footer-menus a.list-group-item {
+    transition: 0.2s; }
+    #footer-menus a.list-group-item:hover {
+      background-color: #1E1E34;
+      color: white; }
+  #footer-menus .list-group-item-active {
+    background-color: #1E1E34;
+    color: white; }
+    #footer-menus .list-group-item-active:hover {
+      background-color: rgba(30, 30, 52, 0.5); }
   #footer-menus .panel {
     border: 0px; }
   #footer-menus .panel-heading {
-    border-bottom-width: 2px;
+    border-bottom-width: 3px;
     border-bottom-color: #1E1E34;
     background: none; }
+  #footer-menus .panel-body {
+    box-shadow: none; }
+  #footer-menus .small {
+    background-color: #f5f5f5; }
 
 .tarjeta-azul {
   padding: 10px;
   color: white;
-  background-color: #1E1E34; }
-  .tarjeta-azul .fa {
-    color: white; }
+  background-color: #1E1E34;
+  transition: 0.3s;
+  border: 2px solid #1E1E34; }
   .tarjeta-azul p {
     font-size: 1.3em; }
+  .tarjeta-azul:hover {
+    background-color: #f5f5f5;
+    color: #1E1E34; }
 
 .tarjeta-azul-claro {
   padding: 10px;
   color: white;
-  background-color: #0000ff; }
-  .tarjeta-azul-claro .fa {
-    color: white; }
+  background-color: #0000ff;
+  transition: 0.3s;
+  border: 2px solid #1E1E34; }
   .tarjeta-azul-claro p {
     font-size: 1.3em; }
+  .tarjeta-azul-claro:hover {
+    background-color: #f5f5f5;
+    color: #0000ff; }
 
 .tarjeta-azul-intermedio {
   padding: 10px;
   color: white;
-  background-color: #3d3d9b; }
-  .tarjeta-azul-intermedio .fa {
-    color: white; }
+  background-color: #3d3d9b;
+  transition: 0.3s;
+  border: 2px solid #1E1E34; }
   .tarjeta-azul-intermedio p {
     font-size: 1.3em; }
+  .tarjeta-azul-intermedio:hover {
+    background-color: #f5f5f5;
+    color: #3d3d9b; }
 
 .iframe-container {
   position: relative;
@@ -293,7 +362,12 @@ nav {
   background-color: #1E1E34;
   color: white;
   border-radius: 55%;
-  padding: 40px; }
+  padding: 40px;
+  transition: 0.5s;
+  border: 5px solid #1E1E34; }
+  .sr-icons:hover {
+    background-color: #f5f5f5;
+    color: #1E1E34; }
 
 #myCarousel .carousel-caption {
   font-weight: 900;

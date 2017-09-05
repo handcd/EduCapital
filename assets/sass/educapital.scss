@@ -10,6 +10,7 @@
 $azul-oscuro: #1E1E34;
 $azul-claro: #0000ff;
 $azul-intermedio: #3d3d9b;
+$gris: #f5f5f5;
 
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
@@ -136,6 +137,72 @@ nav {
 
 #navbar-principal {
     padding-right: 5vw;
+
+    .page-scroll {
+        transition: 0.2s;
+        margin: 5px;
+        &:hover {
+            background-color: $azul-oscuro;
+            color: white;
+            border-radius: 5px;
+        }
+    }
+
+    .active > a {
+        background-image: none;
+        background-color: rgba($azul-oscuro, 0.4);
+        color: $azul-oscuro;
+        border-radius: 5px;
+    }
+}
+
+.modal-content {
+    background-color: $gris;
+    
+    .modal-body {
+        h1, h2, h3 {
+            color: $azul-oscuro;
+        }
+    }
+
+    .modal-header {
+        background-color: $azul-oscuro;
+        color: white;
+    }
+    
+    .modal-footer {
+        background-color: $azul-oscuro;
+        color: white;
+
+        .btn-primary {
+            background-color: $azul-oscuro;
+            color: white;
+            border: 2px solid white;
+            border-radius: 5px;
+            background-image: none;
+            transition: 0.3s;
+
+            &:hover {
+                background-color: white;
+                color: $azul-oscuro;
+            }
+        }
+    }
+
+    .close {
+        text-shadow: none;
+        opacity: unset;
+        color: white;
+        border: 2px solid white;
+        border-radius: 55%;
+        padding: 8px 15px;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: $gris;
+            color: $azul-oscuro;
+        }
+    }
 }
 
 .navbar-brand {
@@ -274,16 +341,44 @@ nav {
 
 #footer-menus {
     padding: 30px;
+    font-size: 1.1em;
+    line-height: 1.9;
+
+    a.list-group-item {
+        transition: 0.2s;
+
+        &:hover {
+            background-color: $azul-oscuro;
+            color: white;
+        }
+    }
+
+    .list-group-item-active {
+        background-color: $azul-oscuro;
+        color: white;
+
+        &:hover {
+            background-color: rgba($azul-oscuro, 0.5);
+        }
+    }
 
     .panel {
         border: 0px;
-
+        
     }
 
     .panel-heading {
-        border-bottom-width: 2px;
+        border-bottom-width: 3px;
         border-bottom-color: $azul-oscuro;
         background: none;
+    }
+
+    .panel-body {
+        box-shadow: none;
+    }
+
+    .small {
+        background-color: #f5f5f5;
     }
 }
 
@@ -291,11 +386,14 @@ nav {
     padding: 10px;
     color: white;
     background-color: $azul-oscuro;
-    .fa {
-        color: white;
-    }
+    transition: 0.3s;
+    border: 2px solid $azul-oscuro;
     p {
         font-size: 1.3em;
+    }
+    &:hover {
+        background-color: #f5f5f5;
+        color: $azul-oscuro;
     }
 }
 
@@ -303,11 +401,14 @@ nav {
     padding: 10px;
     color: white;
     background-color: $azul-claro;
-    .fa {
-        color: white;
-    }
+    transition: 0.3s;
+    border: 2px solid $azul-oscuro;
     p {
         font-size: 1.3em;
+    }
+    &:hover {
+        background-color: #f5f5f5;
+        color: $azul-claro;
     }
 }
 
@@ -315,11 +416,14 @@ nav {
     padding: 10px;
     color: white;
     background-color: $azul-intermedio;
-    .fa {
-        color: white;
-    }
+    transition: 0.3s;
+    border: 2px solid $azul-oscuro;
     p {
         font-size: 1.3em;
+    }
+    &:hover {
+        background-color: #f5f5f5;
+        color: $azul-intermedio;
     }
 }
 
@@ -372,6 +476,13 @@ nav {
     color: white;
     border-radius: 55%;
     padding: 40px;
+    transition: 0.5s;
+    border: 5px solid $azul-oscuro;
+
+    &:hover {
+        background-color: #f5f5f5;
+        color: $azul-oscuro;
+    }
 }
 
 #myCarousel {
